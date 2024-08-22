@@ -40,7 +40,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="mobile-menu">
+                    {/* <div className="mobile-menu">
                         {showMobileMenu ?
                             <div className="mobile-menu-content">
                                 <div className="container flex">
@@ -71,7 +71,7 @@ export default function Home() {
                                 <img src={Menu} alt="ícone menu" width={24} height={24} />
                             </span>
                         }
-                    </div>
+                    </div> */}
 
 
 
