@@ -14,6 +14,10 @@
     padding-inline: var(--px-lg);
 }
 
+.py-sm {
+    padding-block: 12px;
+}
+
 .desktop-only {
     display: none;
 }
