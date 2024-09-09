@@ -8,6 +8,8 @@ import Menu from "../assets/menu.svg"
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
 import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
 import "../styles/hero.css";
+import "../styles/solution.css"
+import Card from "../components/Card.tsx";
 
 
 export default function Home() {
@@ -100,7 +102,7 @@ export default function Home() {
                     <p>Já pensou em matar a saudade daquela comida caseira? O melhor de tudo, nossas receitas são 100% saudáveis, bora entrar no shape.</p>
                     <div className="flex gap-1">
                         <span><Button text="Cadastre-se" /></span>
-                        
+
                         <span className="desktop-only">
                             <Button text="Veja mais" secondary />
                         </span>
@@ -108,6 +110,46 @@ export default function Home() {
                 </div>
 
             </section>
+
+
+            <section id="solution">
+
+                <div className="container content ">
+                    <p className="desktop-only">
+                        Soluções
+                    </p>
+                    <h1>Sob medida para você</h1>
+                    <p>Inovação é com a gente! A <span className="test" style={{ color: 'var(--primary-color)', fontWeight: 'var(--fw-bold)' }}>Singed Alemão</span> já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
+
+
+                    
+                </div>
+
+            </section>
+
+            <div className="cards-container" style={{marginTop: 100}}>
+                        <Card
+                            title="Produto Vencedor"
+                            description="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles podemos citar o CityFarm da FAG e Startup Garage."
+                            imageSrc="https://via.placeholder.com/150"
+                            imageAlt="Imagem de prêmio"
+                        />
+
+                        <Card
+                            title="Melhor Startup"
+                            description="Nossa startup foi premiada como a melhor do ano em diversas competições de inovação."
+                            imageSrc="https://via.placeholder.com/150"
+                            imageAlt="Imagem de troféu"
+                        />
+
+                        <Card
+                            title="Melhor Startup"
+                            description="Nossa startup foi premiada como a melhor do ano em diversas competições de inovação."
+                            imageSrc="https://via.placeholder.com/150"
+                            imageAlt="Imagem de troféu"
+                        />
+                    </div>
+
         </>
     )
 }
