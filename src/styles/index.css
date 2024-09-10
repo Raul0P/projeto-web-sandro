@@ -13,12 +13,12 @@
 
 :root {
     --bg-color: #FFF;
-    --text-color: #252B42;
+    --text-color: #25422b;
     --second-text-color: #737373;
     --light-text-color: #FFFF;
     --light-gray: #F8F8F8;
-    --primary-color: #23A6F0;
-    --secondary-color: #B2E3FF;
+    --primary-color: #1cb652;
+    --secondary-color: #81eeb6;
 
     --ff-sans: 'Montserrat', system-ui,
     sans-serif;
@@ -110,7 +110,7 @@ ul {
 
  /* tentativa de faze os CARD */
 .cards-container {
-    display: flex;
+    display: flex !important;
     justify-content: space-between; 
     flex-wrap: wrap; 
     gap: 20px; 
@@ -121,3 +121,6 @@ ul {
     max-width: 300px; 
   }
 
+  .green-filter {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(14%) saturate(692%) hue-rotate(78deg) brightness(96%) contrast(87%);
+  }

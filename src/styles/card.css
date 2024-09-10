@@ -1,13 +1,13 @@
 .card {
-    background-color: #F8F8F8;
+
+    background-color: #f2f2f2;
     border-radius: 10px;
-    padding: 20px;
+    padding: 35px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.12);
     max-width: 300px;
     margin: 20px auto;
-    position: relative; /* Necessário para ajustar a linha */
-    border-bottom: 5px solid var(--secondary-color); /* Linha azul */
+    border-bottom: 6px solid var(--secondary-color);
   }
   
   .image-container {
@@ -29,6 +29,7 @@
   
   .card-description {
     font-size: 1rem;
+    margin: 10px 0;
     color: var(--second-text-color);
   }
   

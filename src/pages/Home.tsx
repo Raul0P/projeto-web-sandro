@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from '../assets/logo.svg'
 import "../styles/header.css";
 import "../styles/utility.css";
@@ -7,6 +7,9 @@ import Close from "../assets/close.svg"
 import Menu from "../assets/menu.svg"
 import HeroRectangleOne from "../assets/images/rectangleOne.png";
 import HeroRectangleTwo from "../assets/images/rectangleTwo.png";
+import Teste from "../assets/images/teste.png";
+import morello from "../assets/images/morello.png";
+import kkkkk from "../assets/images/icon.png";
 import "../styles/hero.css";
 import "../styles/solution.css"
 import Card from "../components/Card.tsx";
@@ -15,6 +18,14 @@ import Card from "../components/Card.tsx";
 export default function Home() {
 
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+    useEffect(() => {
+        if (showMobileMenu) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [showMobileMenu])
 
     return (
         <>
@@ -90,16 +101,16 @@ export default function Home() {
             <section id="hero">
 
                 <span className="desktop-only">
-                    <img src={HeroRectangleTwo} alt="Retangulo um tela inicial" />
+                    <img className="green-filter" src={HeroRectangleTwo} alt="Retangulo um tela inicial" />
                 </span>
-                <img src={HeroRectangleOne} alt="Retangulo dois tela inicial" />
+                <img className="green-filter" src={HeroRectangleOne} alt="Retangulo dois tela inicial" />
 
                 <div className="container content">
                     <p className="desktop-only">
-                        Olá
+                        Salve!
                     </p>
-                    <h1>Comida de mãe direto no seu apê, é só pedir que entregamos para você!</h1>
-                    <p>Já pensou em matar a saudade daquela comida caseira? O melhor de tudo, nossas receitas são 100% saudáveis, bora entrar no shape.</p>
+                    <h1>Builds Tóxicas, e tudo o que tem de pior na top lane</h1>
+                    <p>Já pensou em matar a vontade de viver de seus inimigos esquizofrênico do topo? Veja abaixo o pior do que é possível comprar</p>
                     <div className="flex gap-1">
                         <span><Button text="Cadastre-se" /></span>
 
@@ -119,36 +130,36 @@ export default function Home() {
                         Soluções
                     </p>
                     <h1>Sob medida para você</h1>
-                    <p>Inovação é com a gente! A <span className="test" style={{ color: 'var(--primary-color)', fontWeight: 'var(--fw-bold)' }}>Singed Alemão</span> já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
+                    <p>Inovação é com a gente! O <span className="test" style={{ color: 'var(--primary-color)', fontWeight: 'var(--fw-bold)' }}>Singed Alemão</span> já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
 
 
-                    
+
                 </div>
 
             </section>
 
-            <div className="cards-container" style={{marginTop: 100}}>
-                        <Card
-                            title="Produto Vencedor"
-                            description="Ideia matadora, nosso time já ganhou diversos eventos de inovação com nosso produto, entre eles podemos citar o CityFarm da FAG e Startup Garage."
-                            imageSrc="https://via.placeholder.com/150"
-                            imageAlt="Imagem de prêmio"
-                        />
+            <div className="cards-container even-columns" style={{ marginTop: 100 }}>
+                <Card
+                    title="Build Vencedora"
+                    description="Rilay matadora, irmão sem meio-termo, começa de poção corrupta e vai na T2 do cara antes dos 1:15 min, depois passa na lane e mete a dedada no inimigo."
+                    imageSrc={Teste}
+                    imageAlt="Imagem de prêmio"
+                />
 
-                        <Card
-                            title="Melhor Startup"
-                            description="Nossa startup foi premiada como a melhor do ano em diversas competições de inovação."
-                            imageSrc="https://via.placeholder.com/150"
-                            imageAlt="Imagem de troféu"
-                        />
+                <Card
+                    title="Sacanagem Liberada"
+                    description="Aqui o jungle do outro lado chora e a mãe não vê, matou a primeira catapa vai seco no sapo do cara e fica parado parecendo um maniáco (você é, acredite)."
+                    imageSrc={morello}
+                    imageAlt="Imagem de troféu"
+                />
 
-                        <Card
-                            title="Melhor Startup"
-                            description="Nossa startup foi premiada como a melhor do ano em diversas competições de inovação."
-                            imageSrc="https://via.placeholder.com/150"
-                            imageAlt="Imagem de troféu"
-                        />
-                    </div>
+                <Card
+                    title="GG JG GAP"
+                    description="Aqui já foi né, tu conseguiu ser pior que um Nunu mid de ghost e curar, deixou teu legado no mundo compânhero. Aproveita e passa na sua BotLane e dê uma kill pro suporte."
+                    imageSrc={kkkkk}
+                    imageAlt="Imagem de troféu"
+                />
+            </div>
 
         </>
     )
