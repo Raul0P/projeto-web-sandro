@@ -20,13 +20,22 @@ export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
 
     useEffect(() => {
+        const body = document.body;
         if (showMobileMenu) {
-            document.body.style.overflow = 'hidden';
+            body.style.overflow = 'hidden';
+            body.style.position = 'fixed';
+            body.style.width = '100%';
         } else {
-            document.body.style.overflow = 'auto';
+            body.style.overflow = 'auto';
+            body.style.position = 'static';
         }
-    }, [showMobileMenu])
 
+        return () => {
+            body.style.overflow = 'auto';
+            body.style.position = 'static';
+        };
+    }, [showMobileMenu])
+    
     return (
         <>
             <header className="container py-sm">
