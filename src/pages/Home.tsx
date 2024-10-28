@@ -13,6 +13,8 @@ import kkkkk from "../assets/images/icon.png";
 import "../styles/hero.css";
 import "../styles/solution.css"
 import Card from "../components/Card.tsx";
+import TestimonialCard from '../components/TestimonialCard';
+import "../styles/testimonials.css";
 
 
 export default function Home() {
@@ -35,7 +37,7 @@ export default function Home() {
             body.style.position = 'static';
         };
     }, [showMobileMenu])
-    
+
     return (
         <>
             <header className="container py-sm">
@@ -134,15 +136,12 @@ export default function Home() {
 
             <section id="solution">
 
-                <div className="container content ">
+                <div className="container content">
                     <p className="desktop-only">
                         Soluções
                     </p>
                     <h1>Sob medida para você</h1>
                     <p>Inovação é com a gente! O <span className="test" style={{ color: 'var(--primary-color)', fontWeight: 'var(--fw-bold)' }}>Singed Alemão</span> já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.</p>
-
-
-
                 </div>
 
             </section>
@@ -169,6 +168,68 @@ export default function Home() {
                     imageAlt="Imagem de troféu"
                 />
             </div>
+
+            <section id="testimonials">
+                <header>
+                    <span>
+                        <p className="desktop-only">
+                            Conselho de quem conhece
+                        </p>
+                        <h2>Cada cliente importa!</h2>
+                    </span>
+                    <p>
+                        Quem já pediu sabe da qualidade das nossas receitas, estamos tirando aquela ideia de que
+                        comida congelada tem de ser algo sem gosto, acompanhe abaixo os testemunhos de quem já comprou e aprovou.
+                    </p>
+                </header>
+
+                <section className="carousel">
+                    <div className="carousel-content">
+                        <TestimonialCard
+                            imageSrc={morello}
+                            testimony="Certamente o mercado chinês de eletricos está bombando, só existe uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço."
+                            rating={3}
+                            name="Ellon Ma"
+                            role="CEO BING CHILLING"
+                        />
+                        <TestimonialCard
+                            imageSrc={morello}
+                            testimony="Certamente o mercado chinês de eletricos está bombando, só existe uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço."
+                            rating={3}
+                            name="Ellon Ma"
+                            role="CEO BING CHILLING"
+                        />
+                        <TestimonialCard
+                            imageSrc={morello}
+                            testimony="Certamente o mercado chinês de eletricos está bombando, só existe uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço."
+                            rating={3}
+                            name="Ellon Ma"
+                            role="CEO BING CHILLING"
+                        />
+                        <TestimonialCard
+                            imageSrc={morello}
+                            testimony="Certamente o mercado chinês de eletricos está bombando, só existe uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço."
+                            rating={3}
+                            name="Ellon Ma"
+                            role="CEO BING CHILLING"
+                        />
+                        <TestimonialCard
+                            imageSrc={morello}
+                            testimony="Certamente o mercado chinês de eletricos está bombando, só existe uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço."
+                            rating={3}
+                            name="Ellon Ma"
+                            role="CEO BING CHILLING"
+                        />
+                        <TestimonialCard
+                            imageSrc={morello}
+                            testimony="Certamente o mercado chinês de eletricos está bombando, só existe uma coisa melhor do que isso, provar uma boa comida DonaFrost no almoço."
+                            rating={3}
+                            name="Ellon Ma"
+                            role="CEO BING CHILLING"
+                        />
+                    </div>
+                </section>
+            </section>
 
         </>
     )
