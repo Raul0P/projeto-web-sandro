@@ -15,6 +15,8 @@ import "../styles/solution.css"
 import Card from "../components/Card.tsx";
 import TestimonialCard from '../components/TestimonialCard';
 import "../styles/testimonials.css";
+import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -230,6 +232,10 @@ export default function Home() {
                     </div>
                 </section>
             </section>
+
+            <ContactForm />
+
+            <Footer />
 
         </>
     )

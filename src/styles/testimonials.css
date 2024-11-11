@@ -27,7 +27,7 @@
 
   .carousel {
     display: flex;
-    width: 80%;
+    width: 100%;
     overflow: hidden; 
   }
 
@@ -41,7 +41,7 @@
   .carousel-content {
     display: flex;
     gap: 1.5rem;
-    animation: swipe 10s linear infinite; /* Adjust duration as needed */
+    animation: swipe 15s linear infinite; 
   }
   
 
