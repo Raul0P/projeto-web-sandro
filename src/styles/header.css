@@ -1,5 +1,3 @@
-
-
 .reverse-color {
     color: var(--primary-color);
 }
@@ -59,3 +57,11 @@
       display: none;
     }
   }
+
+nav img {
+    margin-right: 2rem;
+}
+
+.flex {
+    gap: 2rem;
+}

@@ -13,9 +13,9 @@ export default function Footer() {
                         <h3>LogoMarca</h3>
                         <img src={Logo} alt="Logo DonaFrost" width={220} height={80} />
                         <div className="social-icons">
-                            <a href="#" aria-label="Instagram"><img src={Instagram} alt="insta" width={24} height={24}/></a>
-                            <a href="#" aria-label="Facebook"><img src={Facebook} alt="insta" width={24} height={24}/></a>
-                            <a href="#" aria-label="YouTube"><img src={Youtube} alt="insta" width={24} height={24}/></a>
+                            <a href="#" aria-label="Instagram"><img src={Instagram} alt="insta" width={24} height={24} /></a>
+                            <a href="#" aria-label="Facebook"><img src={Facebook} alt="insta" width={24} height={24} /></a>
+                            <a href="#" aria-label="YouTube"><img src={Youtube} alt="insta" width={24} height={24} /></a>
                         </div>
                     </div>
 
@@ -47,10 +47,10 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
+            </div>
 
-                <div className="footer-bottom">
-                    <p>Feito com amor na aula de Programação Web💙©2024 AktieTech - Todos os direitos reservados.</p>
-                </div>
+            <div className="footer-bottom">
+                <p>Feito com amor na aula de Programação Web💙©2024 AktieTech - Todos os direitos reservados.</p>
             </div>
         </footer>
     );

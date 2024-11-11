@@ -77,7 +77,6 @@ header {
 .price {
     display: flex;
     align-items: end;
-
     p {
         margin-left: 8px;
         padding-bottom: 4px;
