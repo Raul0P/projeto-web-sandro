@@ -89,7 +89,7 @@
   }
 }
 
-@media (width >= 580px) {
+@media (width >= 1280px) {
   #testimonials {
     gap: 5rem;
     align-items: center;
